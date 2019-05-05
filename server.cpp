@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
 			}
 		}
 		);
+		pipe_context.run();
 	} catch (std::system_error &ec) {
 		std::cout << "S: system error: " << ec.what() << ", error code: " << ec.code() << std::endl;
 	} 
